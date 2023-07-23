@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Investment Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="calculator">
+    <h1>Investment Calculator</h1>
+    <div >
+      <label for="monthly-contribution">Monthly Contribution (NIS):</label>
+      <input type="number" id="monthly-contribution" placeholder="Enter the monthly contribution" required>
+  
+      <label for="interest-rate">Yearly Interest Rate (%):</label>
+      <input type="number" id="interest-rate" placeholder="Enter the yearly interest rate" required>
+  
+      <label for="management-fee">Management Fee (%):</label>
+      <input type="number" id="management-fee" placeholder="Enter the management fee" required>
+  
+      <label for="investment-period">Investment Period (Years):</label>
+      <input type="number" id="investment-period" placeholder="Enter the investment period" required>
+  
+      <button id="calculate-btn">Calculate</button>
+    </div>
+  
+    <div id="results">
+      <p>Total Nominal Investment: <span id="total-nominal-investment"></span></p>
+      <p>Total Gains: <span id="total-gains"></span></p>
+      <p>Total Savings Before Tax (Before Management Fees): <span id="total-savings-before-tax-before-fees"></span></p>
+      <p>Total Savings Before Tax (After Management Fees): <span id="total-saving-before-tax-and-fees"></span></p>
+      <p>Total Saving After Tax: <span id="total-saving-after-tax"></span></p>
+      <p>Total Tax Collected: <span id="total-tax-paid"></span></p>
+      <p>Total Management Fees Collected: <span id="total-management-fee"></span></p>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
