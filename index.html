@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Investment Calculator</title>
+  <title>מחשבון השקעות</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="calculator">
-    <h1>Investment Calculator</h1>
+    <h1>מחשבון השקעות</h1>
     <div >
-      <label for="monthly-contribution">Monthly Contribution (NIS):</label>
+      <label class="lbl" for="monthly-contribution">השקעה חודשית</label>
       <input type="number" id="monthly-contribution" placeholder="Enter the monthly contribution" required>
   
-      <label for="interest-rate">Yearly Interest Rate (%):</label>
+      <label class="lbl" for="interest-rate">ריבית שנתית צפויה</label>
       <input type="number" id="interest-rate" placeholder="Enter the yearly interest rate" required>
   
-      <label for="management-fee">Management Fee (%):</label>
+      <label class="lbl" for="management-fee">דמי ניהול</label>
       <input type="number" id="management-fee" placeholder="Enter the management fee" required>
   
-      <label for="investment-period">Investment Period (Years):</label>
+      <label class="lbl" for="investment-period">תקופת השקעה</label>
       <input type="number" id="investment-period" placeholder="Enter the investment period" required>
   
       <button id="calculate-btn">Calculate</button>
     </div>
   
     <div id="results">
-      <p>Total Nominal Investment: <span id="total-nominal-investment"></span></p>
-      <p>Total Gains: <span id="total-gains"></span></p>
-      <p>Total Savings Before Tax (Before Management Fees): <span id="total-savings-before-tax-before-fees"></span></p>
-      <p>Total Savings Before Tax (After Management Fees): <span id="total-saving-before-tax-and-fees"></span></p>
-      <p>Total Saving After Tax: <span id="total-saving-after-tax"></span></p>
-      <p>Total Tax Collected: <span id="total-tax-paid"></span></p>
-      <p>Total Management Fees Collected: <span id="total-management-fee"></span></p>
+      <p>השקעה כספית נומינלית <span id="total-nominal-investment"></span></p>
+      <p>סה״כ הרווחים בלבד<span id="total-gains"></span></p>
+      <p>סה״כ חסכונות לפני מיסים ודמי ניהול <span id="total-savings-before-tax-before-fees"></span></p>
+      <p>סה״כ חסכונות אחרי דמי ניהול ללא מיסים <span id="total-saving-before-tax-and-fees"></span></p>
+      <p>סה״כ חסכונות לאחר מיסים ודמי ניהול <span id="total-saving-after-tax"></span></p>
+      <h2>עלויות</h2>
+      <p>סה״כ מיסים <span id="total-tax-paid"></span></p>
+      <p>סה״כ דמי ניהול <span id="total-management-fee"></span></p>
     </div>
   <script src="script.js"></script>
 </body>
